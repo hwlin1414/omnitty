@@ -1,0 +1,43 @@
+OS: Freebsd 10.2
+
+WARNING:
+    Don't resize the window.
+    Chinese sometimes will display incorrectly.
+
+Usage:
+    ./omnitty
+    ./omnitty [FILE [FILE [...]]]
+
+FILE CONTENT:
+    ignoring prefix blank spaces and tabs
+    ignoring blank lines
+    ignoring lines starting with '#'
+    starting with '@' for including file, ex:
+        @group1
+        @dir/group1
+        @/var/tmp/group1
+    starting with 'telnet:' for telnet, ex:
+        telnet:192.168.0.1
+              ^ no blank space here
+    else for ssh, ex:
+        192.168.0.1
+
+KEYS:
+    F1: MENU
+    F2: UP
+    F3: DOWN
+    F4: TAG
+    F5: ADD
+        use '@' for including file, ex:
+            @group1
+            @dir/group1
+            @/var/tmp/group1
+        use 'telnet:[HOST]' for telnet, ex:
+            telnet:192.168.0.1
+        else for ssh, ex:
+            192.168.0.1
+    F6: DELETE
+    F7: TOGGLE BROADCAST
+        BROCAST will send keys to all tagged machines.
+    F8: MENU
+        avoiding GNU Terminal F1(terminal help)
