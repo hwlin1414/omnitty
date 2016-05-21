@@ -40,4 +40,4 @@ KEYS:
     F7: TOGGLE BROADCAST
         BROCAST will send keys to all tagged machines.
     F8: MENU
-        avoiding GNU Terminal F1(terminal help)
+        avoiding GNOME Terminal F1(terminal help)
